@@ -64,7 +64,7 @@ const SkillsSection = () => {
         </Typography>
     <Grid container rowGap={2} columnGap={12}>
       {skills.map((skill) => (
-        <Grid size={{xs:12, sm:6, md:4}} key={skill.title}  columnSpacing={4}>
+        <Grid size={{xs:12, sm:6, md:4}} key={skill.title}>
           <SkillCard
             imageSrc={skill.imageSrc}
             title={skill.title}

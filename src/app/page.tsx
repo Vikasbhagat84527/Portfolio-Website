@@ -13,7 +13,7 @@ export default function Home() {
         direction={{ sm: 'column', md: 'row' }}
         spacing={12}
         sx={{
-          m: '8rem 10rem 0 15rem',
+          m: '8rem 10rem 5rem 15rem',
         }}
       >
           <ProfileCard/>

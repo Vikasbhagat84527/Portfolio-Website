@@ -2,7 +2,6 @@
 import { IconButton, Stack } from '@mui/material'
 import React from 'react'
 import { ContactIcon, EditIcon, HomeIcon, ProjectIcon, ToolIcon } from './icons'
-// import Link from 'react-scroll'
 const Navbar = () => {
   return (
     <Stack

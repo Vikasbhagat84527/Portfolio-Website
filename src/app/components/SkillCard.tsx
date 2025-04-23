@@ -16,8 +16,9 @@ const SkillCard: React.FC<SkillCardProps> = ({ imageSrc, title, description }) =
         backgroundColor: '#292A2B',
         borderRadius: '12px',
         p: 2,
-        height: '100px',
-        width: '280px',
+        height: '100%',
+        width: '270px',
+        overflow:'hidden',
         transition: "transform 0.3s ease, box-shadow 0.3s ease",
         "&:hover": {
           transform: "translateY(-8px)",

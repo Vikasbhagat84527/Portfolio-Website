@@ -7,13 +7,15 @@ const ProfileCard = () => {
   return (
     <Box
     sx={{
-        position:'sticky',
+        position:{md:'sticky'},
         top:'64px',
-        flex: '0 0 350px',
+        display:'flex',
         borderRadius:'12px',
         backgroundColor:'#292A2B',
-        height:'530px',
-        marginLeft:{xs:'5px', sm:'10px', md:5},
+        height:'550px',
+        width:'auto',
+        justifyContent:'center',
+        alignItems:'center',
         transition: "transform 0.3s ease, box-shadow 0.3s ease",
         "&:hover": {
           transform: "translateY(-8px)",
@@ -24,7 +26,8 @@ const ProfileCard = () => {
       sx={{
         height:'100%',
         justifyContent:'center',
-        alignItems:'center'
+        alignItems:'center',
+        width:'350px'
       }}>
         <Box
         sx={{
