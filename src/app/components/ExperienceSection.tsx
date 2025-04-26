@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Container, Stack, Typography } from "@mui/material";
 import ExperienceCard from "./ExperienceCard";
 
 interface Experience {
@@ -16,7 +16,7 @@ const experiences: Experience[] = [
     title: "SDE Intern",
     company: "Woovly Pvt Ltd.",
     timeline: "Dec 2024 - March 2025",
-    description: `Built a full‑stack analytics solution—designing interactive charts with a Google Analytics–style date picker, implementing event tracking, and optimizing data delivery via modular Express.js and ClickHouse queries. Developed a Salesforce Commerce Cloud cartridge and data ingestion pipeline to integrate and manage shoppable video products at scal`,
+    description: `Built a full‑stack analytics solution—designing interactive charts with a Google Analytics–style date picker, implementing event tracking, and optimizing data delivery via modular Express.js and ClickHouse queries. Developed a Salesforce Commerce Cloud cartridge and data ingestion pipeline to integrate and manage shoppable video products at scale`,
   },
   {
     id: 2,
@@ -30,20 +30,20 @@ const experiences: Experience[] = [
     title: "FullStack Developer Intern",
     company: "Hari Solutions Pvt Ltd",
     timeline: "Sept 2023-Feb 2024",
-    description: "Built the company’s initial website with a Node/Express OAuth backend; React/Material‑UI frontend optimized via memoization and lazy loading; integrated Google Analytics and SEO.",
+    description: "Built the company’s initial website with a Node/Express OAuth backend. React/Material‑UI frontend optimized via memoization and lazy loading; integrated Google Analytics and SEO.",
   },
   {
     id: 4,
     title: "Frontend Developer Intern",
     company: "Forfurs Pvt Ltd",
     timeline: "Dec 2022-Feb 2023",
-    description: " Developed a mobile‑first, responsive React UI with vanilla CSS; leveraged component‑based architecture, lazy loading, and code splitting for clean, optimized performance.",
+    description: " Developed a mobile‑first, responsive React UI with vanilla CSS. leveraged component‑based architecture, lazy loading, and code splitting for clean, optimized performance.",
   },
 ];
 
 const ExperienceSection = () => {
     return (
-        <Stack>
+        <Container maxWidth='md'>
             <Typography variant="h3" sx={{
                  fontWeight:700,
                  lineHeight:'50px',
@@ -92,7 +92,7 @@ const ExperienceSection = () => {
           ))}
         </Stack>
       </Box>
-        </Stack>
+        </Container>
       
     );
   };

@@ -15,9 +15,9 @@ const SkillCard: React.FC<SkillCardProps> = ({ imageSrc, title, description }) =
       sx={{
         backgroundColor: '#292A2B',
         borderRadius: '12px',
-        p: 2,
+        p: 1.5,
         height: '100%',
-        width: '270px',
+        width:{xs:'350px', md:'300px', xl:'370px'},
         overflow:'hidden',
         transition: "transform 0.3s ease, box-shadow 0.3s ease",
         "&:hover": {
@@ -45,8 +45,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ imageSrc, title, description }) =
       </Stack>
       <Stack
         sx={{
-          ml: 1,
-          p: 1,
+          pl: 1,
         }}
       >
         <Typography variant="h4">{title}</Typography>

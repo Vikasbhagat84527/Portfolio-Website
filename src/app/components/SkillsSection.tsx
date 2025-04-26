@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from '@mui/material';
+import { Container, Grid, Typography } from '@mui/material';
 import React from 'react';
 import SkillCard from './SkillCard'; // Adjust the import path as needed
 
@@ -22,12 +22,12 @@ const skills: Skill[] = [
   {
     imageSrc: '/images/Typescript.png',
     title: 'Typescript',
-    description: 'Programming Language',
+    description: 'Typed JavaScript',
   },
   {
-    imageSrc: '/images/ShadCN.png',
-    title: 'ShadCN',
-    description: 'JavaScript Library',
+    imageSrc: '/images/Docker.png',
+    title: 'Docker',
+    description: 'Container Platform',
   },
   {
     imageSrc: '/images/NodeJs.png',
@@ -37,29 +37,29 @@ const skills: Skill[] = [
   {
     imageSrc: '/images/MongoDB.png',
     title: 'MongoDB',
-    description: 'Query Language',
+    description: 'NoSQL Database',
   },
   {
-    imageSrc: '/images/Prisma.png',
-    title: 'Prisma',
-    description: 'Version Control',
+    imageSrc: '/images/Sentry.png',
+    title: 'Sentry',
+    description: 'Error Tracking',
   },
   {
     imageSrc: '/images/SQL.png',
     title: 'SQL',
-    description: 'Testing Framework',
+    description: 'SQL Database',
   },
 ];
 
 const SkillsSection = () => {
   return (
-    <Box>
+    <Container maxWidth='md'>
         <Typography variant='h3' sx={{
             fontWeight:700,
             lineHeight:'50px',
             mb:'20px'
         }}>
-          Top-Tier Libraries & Frameworks for Exceptional <Typography variant='h3' component="span" sx={{ color: '#8D4AEA',fontWeight: 700,
+        Libraries & Tools for Exceptional <Typography variant='h3' component="span" sx={{ color: '#8D4AEA',fontWeight: 700,
           lineHeight: "50px", }}>Results</Typography>
         </Typography>
     <Grid container rowGap={2} columnGap={12}>
@@ -73,7 +73,7 @@ const SkillsSection = () => {
         </Grid>
       ))}
     </Grid>
-    </Box>
+    </Container>
    
   );
 };

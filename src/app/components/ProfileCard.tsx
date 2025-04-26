@@ -8,11 +8,11 @@ const ProfileCard = () => {
     <Box
     sx={{
         position:{md:'sticky'},
-        top:'64px',
+        top:'65px',
         display:'flex',
         borderRadius:'12px',
         backgroundColor:'#292A2B',
-        height:'550px',
+        height:'530px',
         width:'auto',
         justifyContent:'center',
         alignItems:'center',
